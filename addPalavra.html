@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>addPalavra</title>
+  <meta name="author" content="Gabriel">
+  <meta name="description" content="Jogo">
+
+
+  <link rel="stylesheet" href="style/addPalavra.css">
+
+  <script defer src="js/addPalavra.js"></script>
+
+</head>
+
+<body>
+
+  <img class="fundo" src="img/fundo.png">
+
+  <header>
+    <img class="logo" src="img/logo.png">
+  </header>
+
+  <div class="container">
+
+    <main>
+      <textarea name="text" maxlength="8" placeholder="Digite uma palavra"></textarea>
+      <p>Minimo 3 letras, Maximo 8. Sem acentos!</p>
+
+      <div class="botoes">
+        <button class="salvarComecar" onclick="addPalavra()"> Salvar e Começar </button>
+
+        <button class="cancelar" onclick='window.location.href="index.html"'> Cancelar </button>
+      </div>
+    </main>
+
+  </div>
+  <footer>
+    <div class=" direitos">
+      <p id="copyright">&copy; Copyright Alura - 2022<br> By: Gabriel Godoy</p>
+
+      <img id="linked" src="img/linkedin.png" alt="Link para o LinkedIn" usemap="#linkedin" width="50" height="50">
+      <img id="github" src="img/github.jpg" alt="Link para o GitHub" usemap="#github" width="50" height="50">
+    </div>
+
+    <map name="linkedin">
+      <area target="_blank" title="LinkedIn Gabriel" href="https://www.linkedin.com/in/gabriel-godoy-dev/"
+        shape="circle" coords="50,50,60">
+    </map>
+
+    <map name="github">
+      <area target="_blank" title="GitHub Gabriel" href="https://github.com/GabrielMariolla" shape="circle"
+        coords="50,50,60">
+    </map>
+  </footer>
+</body>
+
+</html>

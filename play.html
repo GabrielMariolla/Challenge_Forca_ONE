@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>JogoForca</title>
+  <meta name="author" content="Gabriel">
+  <meta name="description" content="Play">
+
+  <link rel="stylesheet" href="style/index.css">
+  <link rel="stylesheet" href="style/play.css">
+
+  <script defer src="js/play.js"></script>
+</head>
+
+<body onload="iniciarJogo()">
+
+  <img class="fundo" src="img/fundoBranco.png">
+
+  <header>
+    <img class="logo" src="img/logo.png">
+  </header>
+
+  <div class="container">
+
+    <main class="center">
+      <canvas id="canvas" width="600" height="400"></canvas>
+      <h2></h2>
+      <div class="letras container"></div>
+
+      <div class="letraerrada">
+        <span class="wrongletter"></span>
+      </div>
+
+      <div class="botoes">
+        <button class="novoJogo" onClick="document.location.reload(true);">Novo Jogo</button>
+        <button id="desistir">Desistir</button>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    let c = document.getElementById("canvas")
+    if (c.getContext) {
+      var pincel = canvas.getContext('2d')
+
+      pincel.beginPath();
+
+      pincel.lineWidth = 7
+      pincel.strokeStyle = "#0A3871";
+      pincel.moveTo(0, 395);
+      pincel.lineTo(250, 395);
+
+      pincel.moveTo(30, 202);
+      pincel.lineTo(30, 395);
+
+      pincel.moveTo(30, 205)
+      pincel.lineTo(134, 205)
+
+      pincel.moveTo(130, 205)
+      pincel.lineTo(130, 225)
+      pincel.stroke();
+      pincel.closePath()
+      pincel.beginPath()
+    }
+  </script>
+  
